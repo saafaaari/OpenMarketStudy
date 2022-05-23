@@ -9,11 +9,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var myImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    @IBAction func albumButtonTapped(_ sender: Any) {
+    }
+    
+    @IBAction func cameButtonTapped(_ sender: Any) {
+    }
+    
 }
 
