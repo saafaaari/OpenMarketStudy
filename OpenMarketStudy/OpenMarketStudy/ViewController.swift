@@ -33,6 +33,12 @@ class ViewController: UIViewController {
         imagePickerController.sourceType = .camera
         present(imagePickerController, animated: true)
     }
+    @IBAction func compressButtonTapped(_ sender: Any) {
+        let image = myImageView.image
+        
+        let originalData = image?.jpegData(compressionQuality: 1.0)
+        print(Double(originalData!.count) / 1000)
+    }
 }
 
 extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
